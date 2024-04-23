@@ -4,6 +4,8 @@ export const MovieCard = () => {
             <div className = "card-img-container">
                 <img className ="card-img" src = "/" alt="movie-card"/>
             </div>
+
+            <div className = "card-details"></div>
             <div>
                 <span className = "title">The Shawshank Redemption</span>
             </div>
