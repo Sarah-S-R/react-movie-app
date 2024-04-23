@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import axios from 'axiox';
-
+import { MovieCard } from './components/MovieCard/MovieCard';
 import './App.css'
 
 function App() {
@@ -14,17 +14,17 @@ function App() {
         console.log(err)
       }
   }
-  
 
   useEffect (() => {
     getMovies();
   }, [])
 
-  
+
   return (
 
     <div className= "App">
-      Hello Geeks
+      <h1>Movies</h1>
+      <MovieCard/>
       
     </div>
   )
