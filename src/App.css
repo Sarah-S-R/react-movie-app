@@ -16,3 +16,20 @@ body {
   background-color: var(--background-color);
   overflow-x: hidden;
 }
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  background-color: var(--background-color);
+}
+
+.main {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap:wrap;
+  padding: 8rem 2rem 2rem 6rem;
+}

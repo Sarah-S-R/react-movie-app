@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
 
-  const [movies, getMovies] = useState ([]);
+  const [movies, setMovies] = useState ([]);
 
   const getMovies = async () => {
       try{
@@ -25,7 +25,9 @@ function App() {
   return (
 
     <div className= "App">
-      <h1>Movies</h1>
+      <header className = "header">
+        <h1 className = "heading-1">Movies</h1></header>
+      
       <main className = "main">
       {
         movies && movies.length > 0 && movies.map(movie => <MovieCard key={ movie.id } movie = {movie}/>)
